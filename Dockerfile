@@ -1,5 +1,5 @@
 FROM alpine:3
-ARG VERSION
+ARG VERSION=1.0.4-beta.5
 RUN apk update && \
     apk add --no-cache openrc bash curl docker && \
     rc-update add docker boot
