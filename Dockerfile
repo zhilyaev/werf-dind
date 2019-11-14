@@ -1,5 +1,5 @@
 FROM alpine/helm
-ARG VERSION=1.0.4-beta.5
+ARG VERSION=1.0.4-beta.19
 RUN apk update && \
     apk add --no-cache openrc curl docker git && \
     rc-update add docker boot
