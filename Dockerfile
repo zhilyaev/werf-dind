@@ -1,4 +1,4 @@
-FROM alpine/helm
+FROM alpine
 ARG VERSION=1.0.4-beta.20
 RUN apk update && \
     apk add --no-cache openrc curl docker git && \
