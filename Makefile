@@ -1,4 +1,4 @@
-VERSION=1.0.4-beta.5
+VERSION=1.0.4-beta.20
 
 
 .PHONY: build run publish
