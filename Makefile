@@ -9,5 +9,5 @@ run:
 	docker run --entrypoint bash --rm -it -v /var/run/docker.sock:/var/run/docker.sock werf:$(VERSION)
 
 publish:
-	docker tag werf:$(VERSION) docker.pkg.github.com/zhilyaev/werf-dind/werf:latest
-	docker push docker.pkg.github.com/zhilyaev/werf-dind/werf:latest
+	docker tag werf:$(VERSION) dcr.living-team.ru/werf:latest
+	docker push dcr.living-team.ru/werf:latest
