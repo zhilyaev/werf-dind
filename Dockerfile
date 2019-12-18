@@ -1,5 +1,5 @@
 FROM alpine
-ARG VERSION=v1.0.6-rc.6
+ARG VERSION=1.0.6-rc.6
 RUN apk update && \
     apk add --no-cache openrc curl docker git && \
     rc-update add docker boot
