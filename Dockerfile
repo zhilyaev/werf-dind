@@ -1,6 +1,6 @@
-FROM alpine
+FROM alpine/git
 RUN apk update && \
-    apk add --no-cache openrc curl docker git bash && \
+    apk add --no-cache openrc curl docker bash && \
     rc-update add docker boot
 
 SHELL ["/bin/bash", "-c"]
