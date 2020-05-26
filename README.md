@@ -17,7 +17,5 @@ $ docker run --entrypoint ash --rm -it -v /var/run/docker.sock:/var/run/docker.s
 include: https://gitlab.com/g-ci/build/-/raw/master/werf.yml
 
 variables:
-  WERF_VERSION: 1.1.14
   WERF_IMAGES_REPO: hub.docker.com/<user>/<repo>
-
 ```
