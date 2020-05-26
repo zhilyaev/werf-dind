@@ -4,7 +4,8 @@ RUN apk update && \
     rc-update add docker boot
 
 SHELL ["/bin/bash", "-c"]
-ENTRYPOINT ["/bin/bash"]
 ARG VERSION="1.1.14+fix1"
 RUN curl -L "https://dl.bintray.com/flant/werf/v$VERSION/werf-linux-amd64-v$VERSION" -o /usr/local/bin/werf && \
     chmod +x /usr/local/bin/werf
+
+ENTRYPOINT ["/usr/local/bin/werf"]
